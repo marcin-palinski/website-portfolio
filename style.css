@@ -1,0 +1,198 @@
+body {
+    min-height: 100vh;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    position: relative;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* HEADER */ 
+
+header {
+    height: 50px;
+    background-color: #2E4E8E;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger-menu {
+    height: 100%;
+    width: 20px;
+    padding: 5px 0 5px 20px;
+    display: none;
+}
+
+.hamburger-bar {
+    width: 40px;
+    height: 4px;
+    margin: 6px 0;
+    background-color: #ddd;
+    border-radius: 2px;
+}
+
+
+
+/* // menu cv */
+
+.menu-item::after {
+    content: "";
+    background-color: #eee;
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transition: all 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #4f6faf;
+    cursor: pointer;
+}
+
+.menu-item:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+.logo .menu-item {
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.image-box {
+    width: 100%;
+    height: 400px;
+    background-color: #ddd;
+    margin-bottom: 40px;
+    background-image: url(images/pxfuel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* MAIN */ 
+
+main {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.content-box {
+    width: 60%;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 2em;
+    letter-spacing: 1px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    line-height: 2;
+    padding-bottom: 40px;
+}
+
+.end-image {
+    height: 200px;
+    width: 100%;
+    background-image: url(images/pxfuel1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+footer {
+    height: 60px;
+    background-color: #222;
+    color: #eee;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) and (min-width: 100px) {
+    
+    .hamburger-menu {
+        display: block;
+    }
+    
+    .menu-box {
+        position: relative;
+        flex-direction: column;
+        /* left: -50vw; */
+        margin-top: 50px;
+        margin-left: -50px;
+        width: 100vw;
+        height: 500px;
+    }
+
+    .menu-box .menu-item {
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .show {
+        left: 0vw;
+    }
+}
+
+.menu-box {
+    display: flex;
+    height: 50px;
+    left: -100vw;
+}
+
+.menu-item {
+    height: 50px;
+    width: 100px;  
+    background-color: #3f5f9f;
+    color: #ddd;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.menu-item a {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    width: inherit;
+}
