@@ -102,6 +102,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
+    /* border-bottom: 1px solid #222; */
 }
 
 .title {
@@ -112,20 +114,38 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .content {
     line-height: 2;
-    padding-bottom: 40px;
+    /* padding-bottom: 10px; */
 }
 
-.end-image {
-    height: 200px;
+.title {
+    height: 100px;
     width: 100%;
-    background-image: url(images/pxfuel1.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+}
+
+.postman {
+    background-image: url(images/postman\ image.png);
+    
+}
+
+.javascript {
+    background-image: url(images/JavaScript-logo.png);
+    
+}
+
+.sql {
+    background-image: url(images/sql.png);
+}
+
+.git {
+    background-image: url(images/git.png);
 }
 
 footer {
