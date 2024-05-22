@@ -188,12 +188,10 @@ main {
 
 .postman {
     background-image: url(images/postman\ image.png);
-    
 }
 
 .javascript {
     background-image: url(images/JavaScript-logo.png);
-    
 }
 
 .sql {
@@ -202,6 +200,10 @@ main {
 
 .git {
     background-image: url(images/git.png);
+}
+
+.azure {
+    background-image: url(images/azure.png);
 }
 
 footer {
