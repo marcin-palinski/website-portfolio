@@ -1,10 +1,10 @@
 body {
-    height: 320vh;
+    height: auto;
     background-color: #eee;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    position: relative;
+    /* position: relative; */
     overflow-x: hidden;
 }
 
@@ -142,13 +142,14 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding-bottom: 100px;
 }
 
 
 .about-box {
     width: 60%;
-    height: 400px;
+    height: auto;
     margin: 50px auto;
     display: flex;
     flex-direction: row;
@@ -157,15 +158,21 @@ main {
 
 .description, .photo {
     width: 50%;
-    height: 100%;
+    /* min-height: 300px; */
+    height: auto;
     padding: 20px;
     box-sizing: border-box;
     line-height: 1.5;
 }
 
+h2 {
+    margin: 0
+}
+
 .description ul {
     list-style: none;
     padding-left: 0;
+    text-align: left;
 }
 
 
@@ -198,7 +205,7 @@ main {
 }
 
 .content {
-    line-height: 2;
+    line-height: 1.5;
 }
 
 div.image {
@@ -242,10 +249,30 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     left: 0;
     right: 0;
 }
 
+@media screen and (max-width: 800px) {
 
+    main div.image-box {
+        height: auto;
+    }
+
+    main div.about-box {
+        flex-direction: column;
+        width: 90%;
+        margin: 0px auto
+    }
+
+    main div.content-box, main div.about-box.description {
+        width: 80vw;
+    }
+
+    div.about-box div.description, div.about-box div.photo {
+        width: 100%;
+        text-align: justify;
+    }
+}
