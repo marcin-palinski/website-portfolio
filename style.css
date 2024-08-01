@@ -4,12 +4,17 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    /* position: relative; */
+    font-size: 16px;
     overflow-x: hidden;
 }
 
 * {
     box-sizing: border-box;
+}
+
+*::selection {
+    background-color: #eee;
+    color: #222;
 }
 
 a {
@@ -75,7 +80,7 @@ header {
 }
 
 
-/* menu */
+/* hamburger menu */
 
 .menu-box {
     position: relative;
@@ -120,6 +125,7 @@ header {
     width: inherit;
 }
 
+/* main photo */
 
 .image-box {
     width: 100%;
@@ -131,19 +137,18 @@ header {
 .image-box img {
     width: 100%;
     height: 100%;
-    object-fit: contain
+    object-fit: contain;
 }
 
-/* MAIN */ 
+/* main */ 
 
 main {
-    min-height: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-bottom: 100px;
 }
 
 
@@ -158,12 +163,12 @@ main {
 
 .description, .photo {
     width: 50%;
-    /* min-height: 300px; */
     height: auto;
     padding: 20px;
     box-sizing: border-box;
     line-height: 1.5;
 }
+
 
 h2 {
     margin: 0
@@ -188,6 +193,11 @@ h2 {
     vertical-align: bottom;
     color: rgb(14, 175, 41);
     margin-right: 10px;
+}
+
+.material-symbols-outlined::selection {
+    color: rgb(14, 175, 41);
+    background-color: #eee;
 }
 
 
@@ -249,13 +259,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: absolute; */
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
-@media screen and (max-width: 800px) {
+footer::selection {
+    background-color: #222;
+    color: #eee;
+}
+
+@media screen and (max-width: 900px) {
 
     main div.image-box {
         height: auto;

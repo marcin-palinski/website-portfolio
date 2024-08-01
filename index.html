@@ -107,5 +107,16 @@
                 </div>
         </div>
     </main>
-    <footer>All rights reserved by author. &copy; </footer>
+    <footer>Wszystkie prawa zastrzeżone. &copy; </footer>
+    <script>
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'a') {
+            e.preventDefault();
+            }
+        });
+    </script>
 </body>
