@@ -10,23 +10,20 @@ body {
 
 * {
     box-sizing: border-box;
+    user-select: none
 }
 
-*::selection {
-    background-color: #eee;
-    color: #222;
-}
-
+/* 
 a {
     color: inherit;
     text-decoration: none;
 }
-
+ */
 
 
 /* HEADER */ 
 
-header {
+/* header {
     height: 50px;
     background-color: #2E4E8E;
 }
@@ -82,7 +79,7 @@ header {
 
 /* hamburger menu */
 
-.menu-box {
+/* .menu-box {
     position: relative;
     background-color: #eee;
     top: 18px;
@@ -123,7 +120,7 @@ header {
     text-align: center;
     line-height: 50px;
     width: inherit;
-}
+} */
 
 /* main photo */
 
@@ -195,11 +192,6 @@ h2 {
     margin-right: 10px;
 }
 
-.material-symbols-outlined::selection {
-    color: rgb(14, 175, 41);
-    background-color: #eee;
-}
-
 
 .content-box {
     width: 60%;
@@ -259,11 +251,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-footer::selection {
-    background-color: #222;
-    color: #eee;
 }
 
 @media screen and (max-width: 900px) {
