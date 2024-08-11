@@ -27,37 +27,29 @@
 const imageBox = document.querySelector('.image-box')
 const aboutBox = document.querySelector('.about-box')
 
-const heightImageBox = imageBox.clientHeight
-const heightAboutBox = aboutBox.clientHeight
-
-const item1 = document.querySelectorAll(".item-content")[0]
-const item2 = document.querySelectorAll(".item-content")[1]
-const item3 = document.querySelectorAll(".item-content")[2]
-const item4 = document.querySelectorAll(".item-content")[3]
-const item5 = document.querySelectorAll(".item-content")[4]
-const item6 = document.querySelectorAll(".item-content")[5]
-
+const items = [...document.querySelectorAll(".item-content")]
 
 document.addEventListener("scroll", () => {
-  const boxHeight = window.scrollY;
+  const scrollPosition = window.scrollY;
+  console.log(scrollPosition)
 
-  if (boxHeight < heightImageBox) {
-    item1.classList.remove("left")
+  if (window.innerWidth > 800 && scrollPosition < imageBox.clientHeight) { // ok
+    items[0].classList.remove("left")
   } 
-  else if (boxHeight < heightImageBox + heightAboutBox) {
-    item2.classList.remove("right")
+  else if (scrollPosition < imageBox.clientHeight + aboutBox.clientHeight) { // ok
+    items[1].classList.remove("right")
   }
-  else if (boxHeight < heightImageBox + heightAboutBox + item1.clientHeight) {
-    item3.classList.remove("left")
+  else if (scrollPosition < imageBox.clientHeight + aboutBox.clientHeight + items[0].clientHeight + items[1].clientHeight) { // ok
+    items[2].classList.remove("left")
   }
-  else if (boxHeight < heightImageBox + heightAboutBox + item1.clientHeight + item2.clientHeight) {
-    item4.classList.remove("right")
+  else if (scrollPosition < imageBox.clientHeight + aboutBox.clientHeight + items[0].clientHeight + items[1].clientHeight + items[2].clientHeight) {
+    items[3].classList.remove("right")
   }
-  else if (boxHeight < heightImageBox + heightAboutBox + item1.clientHeight + item2.clientHeight + item3.clientHeight) {
-    item5.classList.remove("left")
+  else if (scrollPosition < imageBox.clientHeight + aboutBox.clientHeight + items[0].clientHeight + items[1].clientHeight + items[2].clientHeight + items[3].clientHeight) {
+    items[4].classList.remove("left")
   }
-  else if (boxHeight < heightImageBox + heightAboutBox + item1.clientHeight + item2.clientHeight + item3.clientHeight + item4.clientHeight) {
-    item6.classList.remove("right")
+  else if (scrollPosition < imageBox.clientHeight + aboutBox.clientHeight + items[0].clientHeight + items[1].clientHeight + items[2].clientHeight + items[3].clientHeight + items[4].clientHeight) {
+    items[5].classList.remove("right")
   } 
 
 })
