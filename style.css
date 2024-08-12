@@ -1,5 +1,6 @@
 body {
     height: auto;
+    width: 100vw;
     background-color: #eee;
     margin: 0;
     padding: 0;
@@ -12,115 +13,6 @@ body {
     box-sizing: border-box;
     user-select: none
 }
-
-/* 
-a {
-    color: inherit;
-    text-decoration: none;
-}
- */
-
-
-/* HEADER */ 
-
-/* header {
-    height: 50px;
-    background-color: #2E4E8E;
-}
-
-.hamburger-menu {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 10px;
-    left: 10px;
-    width: 50px;
-    height: 32px;
-    z-index: 2;
-    transition: 0.2s;
-    cursor: pointer;
-}
-
-.hamburger-bar {
-    height: 2px;
-    width: 28px;
-    background-color: #eee;
-    border-radius: 20%;
-    margin: 5px 0px;
-    transition: 0.3s;
-}
-
-.color {
-    background-color: #eee;
-    width: 36px;
-    transition: 0.2s;
-}
-  
-.one {
-    position: absolute;
-    top: 10px;
-    transform: rotate(45deg);
-    transition: .3s;
-}
-  
-.two {
-    display: none;
-    transition: .2s;
-}
-  
-.three {
-    position: absolute;
-    top: 10px;
-    transform: rotate(-45deg);
-    transition: .3s;
-}
-
-
-/* hamburger menu */
-
-/* .menu-box {
-    position: relative;
-    background-color: #eee;
-    top: 18px;
-    left: -100vw;
-    z-index: 1;
-    transition: all 0.4s ease-in-out;
-    padding: 0;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
-    align-items: center;
-}
-
-.visible {
-    left: -0vw;
-}
-
-.menu-item {
-    height: 50px;
-    font-size: 1.4em;
-    display: block;
-    width: 100vw;
-    text-align: center;
-    line-height: 40px;
-    color: #222;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-  
-.menu-item:hover {
-    color: #eee;
-    background-color: #6e8ece;
-}
-
-.menu-item a {
-    display: block;
-    text-align: center;
-    line-height: 50px;
-    width: inherit;
-} */
 
 /* main photo */
 
@@ -166,7 +58,6 @@ main {
     padding: 20px;
     box-sizing: border-box;
     line-height: 1.5;
-    
 }
 
 .photo img {
@@ -204,7 +95,6 @@ h1 {
 
 
 .content-box {
-    margin-top: 50px;
     width: 60%;
     text-align: justify;
 }
@@ -214,9 +104,10 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    padding: 50px 0px;
     position: relative;
-    transition: .5s;
+    transition: .4s;
+    transition-timing-function: ease-in-out;
     left: 0;
 }
 
