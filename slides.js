@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-=======
-// slide elements
 
->>>>>>> 0acaac1 (changed slides of tools)
 const imageBox = document.querySelector('.image-box')
 const aboutBox = document.querySelector('.about-box')
 
