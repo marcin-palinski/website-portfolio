@@ -58,6 +58,15 @@ main {
     padding: 20px;
     box-sizing: border-box;
     line-height: 1.5;
+    text-align: justify;
+}
+
+.description p {
+    margin: 0px;
+}
+
+.description p:nth-child(5) {
+    padding-top: 20px;
 }
 
 .photo img {
