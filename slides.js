@@ -2,7 +2,7 @@
 const imageBox = document.querySelector('.image-box')
 const aboutBox = document.querySelector('.about-box')
 
-const items = [...document.querySelectorAll(".item-content")]
+const items = [...document.querySelectorAll("article")]
 
 document.addEventListener("scroll", () => {
   const windowHeight = window.innerHeight;

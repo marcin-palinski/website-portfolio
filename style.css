@@ -62,7 +62,7 @@ main {
 }
 
 .description p {
-    margin: 0px;
+    margin: 10px 0px;
 }
 
 .description p:nth-child(5) {
@@ -103,12 +103,12 @@ h1 {
 }
 
 
-.content-box {
+section.content-box {
     width: 60%;
     text-align: justify;
 }
 
-.item-content {
+article {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,14 +188,19 @@ footer {
         margin: 0px auto
     }
 
-    main div.content-box, main div.about-box.description {
+    main section.content-box, main div.about-box.description {
         width: 80vw;
     }
 
     div.about-box div.description, div.about-box div.photo {
         width: 100%;
         max-height: 700px;
+        height: auto;
         text-align: justify;
+    }
+
+    section.content-box {
+        margin-top: 150px;
     }
 
     .left {
